@@ -23,3 +23,9 @@ def test_has_header(text):
 
 def test_has_subheader_3_4(text):
     assert '### 3.4 Медведь' in text
+
+def test_has_header_fiasko(text):
+    assert '## 4. Фиаско' in text
+
+def test_na_text_Nalixie_Svetlana(text):
+    assert 'Svetlana' not in text
