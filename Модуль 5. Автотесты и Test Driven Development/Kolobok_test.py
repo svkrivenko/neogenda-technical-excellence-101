@@ -21,5 +21,13 @@ def test_has_header(text):
     assert '# Сказка про колобка' in text
 
 
-def test_has_subheader_3_4(text):
+def test_has_subheader_медведь(text):
     assert '### 3.4 Медведь' in text
+
+
+def test_есть_глава_про_волка(text):
+    assert '### 3.2 Волк' in text
+
+
+def test_нет_собаки_серой(text):
+    assert 'Собака серая' not in text
