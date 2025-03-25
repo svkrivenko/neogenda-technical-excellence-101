@@ -23,3 +23,11 @@ def test_has_header(text):
 
 def test_has_subheader_3_4(text):
     assert '### 3.4 Медведь' in text
+
+
+def test_has_глава3(text):
+    assert '# 3. Встреча со зверьми' in text
+
+
+def test_has_подпункт3_1(text):
+    assert '### 3.1 Заец' in text
