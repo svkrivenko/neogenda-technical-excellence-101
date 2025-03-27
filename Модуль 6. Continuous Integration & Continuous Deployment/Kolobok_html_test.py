@@ -25,6 +25,5 @@ def test_has_subheader1(html):
     assert '<h2>1. Как колобок появился</h2>' in html
 
 
-def test_has_subheader1_wof(html):
-    assert '<h2>3.2 Ночной волк</h2>' in html
-    
+def test_has_subheader1_wofl(html):
+    assert '<h3>3.2 Ночной Волк</h3>' in html
