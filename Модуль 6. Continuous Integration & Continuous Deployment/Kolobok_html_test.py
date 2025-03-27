@@ -26,4 +26,4 @@ def test_has_subheader1(html):
 
 
 def test_есть_волк(html):
-    assert '<h3>Волк</h3>' in html
+    assert '<h3>3.2 Волк</h3>' in html
