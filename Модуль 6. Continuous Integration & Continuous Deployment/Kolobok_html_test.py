@@ -22,3 +22,9 @@ def test_has_header(html):
 
 def test_has_subheader1(html):
     assert '<h2>1. Как колобок появился</h2>' in html
+
+def test_has_gray_wolf(html):
+    assert '<h3>3.2 Серый волк</h3>' in html
+
+def test_has_not_night_wolf(html):
+    assert 'ночной волк' not in html.lower()
