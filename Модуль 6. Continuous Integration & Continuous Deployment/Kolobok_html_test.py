@@ -22,3 +22,6 @@ def test_has_header(html):
 
 def test_has_subheader1(html):
     assert '<h2>1. Как колобок появился</h2>' in html
+
+def test_есть_заголовок_про_зайца(html):
+    assert '<h3>3.1 Заяц</h3>' in html
