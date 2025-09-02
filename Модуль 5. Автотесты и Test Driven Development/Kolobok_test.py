@@ -20,5 +20,26 @@ def text(change_test_dir):
 def test_has_header(text):
     assert '# Сказка про колобка' in text
 
+def test_has_subheader_3_3(text):
+    assert '### 3.3 Свин' in text
+
 def test_has_subheader_3_4(text):
     assert '### 3.4 Медведь' in text
+
+def test_text_has_no_zaec_in_any_case(text):
+    assert 'заец' not in text.lower()
+
+def test_has_subheader_3_2_wolf(text):
+    assert '### 3.2 Серый волк' in text
+
+def test_has_subheader_3_1_rabbit(text):
+    assert '### 3.1 Заяц' in text
+
+def test_has_header_4_final(text):
+    assert '## 4. Финал. Встреча с Лисой-колбасой' in text
+
+def test_section_1_header_spelling(text):
+    assert '## 1. Как колобок появился' in text
+
+def test_section_2_header_spelling(text):
+    assert '## 2. Как колобок убежал' in text
