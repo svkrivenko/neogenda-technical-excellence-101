@@ -24,4 +24,8 @@ def test_has_subheader_3_4(text):
     assert '### 3.4 Медведь' in text
 
 def test_has_subheader_1(text):
-    assert 'Как коловбок появился' in text
+    assert 'Как колобок появился' in text
+
+def test_has_subheader_1(text):
+    assert '### 3.1 Заяц' in text
+    
