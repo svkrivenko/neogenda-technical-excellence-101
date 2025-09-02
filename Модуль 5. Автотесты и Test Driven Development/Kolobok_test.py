@@ -28,3 +28,18 @@ def test_has_subheader_3_4(text):
 
 def test_has_subheader_3_5(text):
     assert '### 3.5 Лиса' in text
+
+def test_subheaders_order_is_correct(text):
+    order = [
+        '### 3.1 Заец',
+        '### 3.2 Собака серая',
+        '### 3.3 Свин',
+        '### 3.4 Медведь',
+        '### 3.5 Лиса',
+    ]
+    positions = []
+    for marker in order:
+        pos = text.find(marker)
+        assert pos != -1, f'Не найден заголовок: {marker}'
+        positions.append(pos)
+    assert positions == sorted(positions), 'Заголовки 3.x идут в неверном порядке'
