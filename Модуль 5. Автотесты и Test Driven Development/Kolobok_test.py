@@ -25,3 +25,6 @@ def test_has_subheader_3_3(text):
 
 def test_has_subheader_3_4(text):
     assert '### 3.4 Медведь' in text
+
+def test_has_subheader_3_5(text):
+    assert '### 3.5 Лиса' in text
