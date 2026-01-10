@@ -35,7 +35,7 @@ def test_has_subheader_3_5(text):
 def test_subheaders_order_is_correct(text):
     order = [
         '### 3.1 Заяц',
-        '### 3.2 Собака серая',
+        '### 3.2 Волк',
         '### 3.3 Свин',
         '### 3.4 Медведь',
         '### 3.5 Лиса',
