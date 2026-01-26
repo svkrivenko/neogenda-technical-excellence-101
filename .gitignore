@@ -130,3 +130,6 @@ dmypy.json
 
 *.pdf
 .DS_Store
+
+# Unit 7 AI docs
+Unit_7_AI/docs/
