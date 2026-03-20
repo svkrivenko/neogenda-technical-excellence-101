@@ -1,19 +1,27 @@
+.PHONY: test setup build html open clean
+
+# Установка зависимостей — делается ОДИН РАЗ, ДО сборки
 setup:
-	pip3 install --upgrade pip 
+	pip3 install --upgrade pip
 	pip3 install markdown2 pytest flake8
 
-clear:
-	rm -rf ./build/*
+# Очистка
+clean:
+	rm -rf ./build/
+
+# Сборка HTML — зависит от setup (если нужно)
+html:
 	mkdir -p ./build
+	python3 -m markdown2 Kolobok.md > ./build/Kolobok.html
 
-build: setup clear
-	markdown2 Kolobok.md > ./build/Kolobok.html
-	cat ./build/Kolobok.html
+# Создание директории и сборка
+build: html
 
-lint:
-	flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
-	flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
+# Открытие в браузере
+open: build
+	open ./build/Kolobok.html
 
-test: build
-	pytest
+# Тесты — зависят от setup, но не от build
+test: setup build
+	python3 -m pytest
 
