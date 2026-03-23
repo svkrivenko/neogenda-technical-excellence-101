@@ -24,7 +24,7 @@ jobs:
         python -m pip install --upgrade pip
         pip install flake8 pytest markdown2
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
-        cd "Unit_5_Autotests_and_Test_Driven_Development"
+        cd "Unit_6_Continuous_Integration_and_Continuous_Deployment"
         rm -rf ./build
         mkdir ./build
         markdown2 Kolobok.md > ./build/Kolobok.html
