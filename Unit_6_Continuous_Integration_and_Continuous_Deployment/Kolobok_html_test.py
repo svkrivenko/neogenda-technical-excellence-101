@@ -29,4 +29,4 @@ def test_has_header(html):
     assert 'деливери клаб' in html
 
 def test_has_header(html):
-    assert 'Кабан-наркоман2' in html
+    assert 'Кабан-наркоман' in html
