@@ -27,3 +27,6 @@ def test_has_subheader1(html):
 
 def test_has_header(html):
     assert 'деливери клаб' in html
+
+def test_has_header(html):
+    assert 'Кабан-наркоман2' in html
