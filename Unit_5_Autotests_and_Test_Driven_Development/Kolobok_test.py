@@ -23,3 +23,7 @@ def test_has_header(text):
 
 def test_has_subheader_3_4(text):
     assert '### 3.4 Медведь' in text
+
+
+def test_final_section_is_not_placeholder(text):
+    assert '## 4. Финал. Встреча с Лисой-колбасой\n...' not in text
