@@ -23,3 +23,9 @@ def test_has_header(text):
 
 def test_has_subheader_3_4(text):
     assert '### 3.4 Медведь' in text
+
+
+def test_has_sections_1_2_3(text):
+    assert '## 1. Как коловбок появился' in text
+    assert '## 2. Как колобок убеждал' in text
+    assert '## 3. Встреча со зверьми' in text
