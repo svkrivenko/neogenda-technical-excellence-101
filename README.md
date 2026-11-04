@@ -27,21 +27,22 @@
 4. Установите Git https://git-scm.com/downloads (Детальная инструкция тут, если нужно https://git-scm.com/book/ru/v2/Введение-Установка-Git)
 5. Проверьте, что git работает \
   3.1. Откройте Terminal в MacOS или Git Bash в Windows (в дальнейшем, если не узказано иное, команды выполняются в Terminal в MacOS и в Git Bash в Windows) \
-  3.2. Выполните команду git --version \
+  3.2. Выполните команду \
+       - git --version \
   3.3. Если вы увидели вывод git version ..., значит все в порядке, git установлен. 
-6. Сгенерируйте SSH ключ по инструкции https://git-scm.com/book/ru/v2/Git-на-сервере-Генерация-открытого-SSH-ключа . (Обратите внимание, в какой файл вы сохраняете ваш ключ, по умолчанию может идти что-то другое, например, id_e25519. Если вы не задаете файл id_rsa, то не создадтся файл ~/.ssh/id_rsa.pub, и для команды cat и копирования ключа, нужно будет использовать ваш путь и ваше имя файла: cat ваш_путь) 
-7. Добавьте публичный ключ SSH в профиль github https://github.com/settings/keys (New SSH key)
-8. Создайте папку, в которой вы будете работать, например Projects (запускайте команды по одной, как сработает первая команда, переходите к следующей) \
+7. Сгенерируйте SSH ключ по инструкции https://git-scm.com/book/ru/v2/Git-на-сервере-Генерация-открытого-SSH-ключа . (Обратите внимание, в какой файл вы сохраняете ваш ключ, по умолчанию может идти что-то другое, например, id_e25519. Если вы не задаете файл id_rsa, то не создадтся файл ~/.ssh/id_rsa.pub, и для команды cat и копирования ключа, нужно будет использовать ваш путь и ваше имя файла: cat ваш_путь) 
+8. Добавьте публичный ключ SSH в профиль github https://github.com/settings/keys (New SSH key)
+9. Создайте папку, в которой вы будете работать, например Projects (запускайте команды по одной, как сработает первая команда, переходите к следующей) \
    - cd ~ \
    - mkdir Projects \
    - cd Projects
-9. Склонируйте репозиторий. Выполните команду в консоли (если что-то спросит, отвечайте "yes"): \
-  $ git clone git@github.com:svkrivenko/neogenda-technical-excellence-101.git
-10. Откройте проект в VS Code. Если VS Code спросит "Do you trust the authors ... ?", выберете "Yes, ..." \
-  $ cd neogenda-technical-excellence-101
-  $ code .
+10. Склонируйте репозиторий. Выполните команду в консоли (если что-то спросит, отвечайте "yes"): \
+   - git clone git@github.com:svkrivenko/neogenda-technical-excellence-101.git
+11. Откройте проект в VS Code, используя команды ниже или открыв папку neogenda-technical-excellence-101 в самой программе VS Code. Если VS Code спросит "Do you trust the authors ... ?", выберете "Yes, ..." или "Trust ..." \
+   - cd neogenda-technical-excellence-101
+   - code .
 12. В VS Code откройте терминал Terminal -> New  Terminal
-13. В меню VS Code включите опцию File -> AutoSave
+13. В меню VS Code включите опцию File -> AutoSave. Должна появиться галочка напротив
 14. Нужно выполнить команды в терминале, подставив своё имя и е-мейл: \
   $ git config --global user.name "John Doe" \
   $ git config --global user.email johndoe@example.com \
