@@ -35,7 +35,7 @@
   $ cd ~ \
   $ mkdir Projects \
   $ cd Projects
-9. Склонируйте репозиторий. Выполните команду в консоли: \
+9. Склонируйте репозиторий. Выполните команду в консоли (если что-то спросит, отвечайте "yes"): \
   $ git clone git@github.com:svkrivenko/neogenda-technical-excellence-101.git
 10. Откройте проект в VS Code. Если VS Code спросит "Do you trust the authors ... ?", выберете "Yes, ..." \
   $ code .
