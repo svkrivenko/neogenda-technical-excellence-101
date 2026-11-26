@@ -13,7 +13,7 @@ def change_test_dir(request):
 
 @pytest.fixture()
 def html(change_test_dir):
-    with open('build/Kolobok.html', mode='r', encoding='cp1251') as output_file:
+    with open('build/Kolobok.html', mode='r') as output_file:
         return output_file.read()
 
 
