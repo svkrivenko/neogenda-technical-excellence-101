@@ -25,4 +25,4 @@ def test_has_subheader1(html):
     assert '<h2>1. Как колобок появился</h2>' in html
 
 def test_has_subheaderSvinH3(html):
-    assert '<h2>3.3 Свин</h2>' in html
+    assert '<h3>3.3 Свин</h3>' in html
